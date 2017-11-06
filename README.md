@@ -7,9 +7,15 @@ Initializes the uploader widget, and renders the attachments table.
 
 ## Usage
 
-For a minimal setup, please import the following scripts. Order is important.
+For a minimal setup, please import the following stylesheets and scripts. Order is important.
 
 ```
+  <!-- Bootstrap style -->
+  <link rel="stylesheet" type="text/css" href="/static/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  
+  <!-- jQuery Fileupload style -->
+  <link rel="stylesheet" type="text/css" href="/static/node_modules/blueimp-file-upload/css/jquery.fileupload.css">
+  
   <!-- jQuery -->
   <script src="/static/node_modules/jquery/dist/jquery.js"></script>
 
@@ -52,3 +58,9 @@ For a minimal setup, please import the following scripts. Order is important.
 ## License
 
 Released under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Publication
+
+Run:
+
+    `npm publish`
