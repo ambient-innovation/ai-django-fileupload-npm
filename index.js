@@ -36,19 +36,22 @@ $(function () {
     fileuploadElement.addClass('fileupload-processing');
     var content_type_id = $('#content_type_id').val();
     var object_id = $('#object_id').val();
-    $.ajax({
-        // Uncomment the following to send cross-domain cookies:
-        // xhrFields: {withCredentials: true},
-        // url: fileuploadElement.fileupload('option', 'url'),
+    if (content_type_id && object_id) {
+        $.ajax({
+            // Uncomment the following to send cross-domain cookies:
+            // xhrFields: {withCredentials: true},
+            // url: fileuploadElement.fileupload('option', 'url'),
 
-        url: '/upload/view/?content_type_id=' + content_type_id + '&object_id=' + object_id,
-        dataType: 'json',
-        context: fileuploadElement[0]
-    }).always(function () {
-        $(this).removeClass('fileupload-processing');
-    }).done(function (result) {
-        $(this).fileupload('option', 'done')
-            .call(this, $.Event('done'), {result: result});
-    });
+            url: '/upload/view/?content_type_id=' + content_type_id + '&object_id=' + object_id,
+            dataType: 'json',
+            context: fileuploadElement[0]
+        }).always(function () {
+            $(this).removeClass('fileupload-processing');
+        }).done(function (result) {
+            $(this).fileupload('option', 'done')
+                .call(this, $.Event('done'), {result: result});
+        });
+    }
+
 
 });
