@@ -23,12 +23,12 @@
   ],
   "author": "Ambient Innovation GmbH",
    "dependencies": {
-    "jquery": "^3.2.1",
-    "bootstrap": "^3.3.7",
-    "blueimp-file-upload": "^9.19.1",
-    "blueimp-canvas-to-blob": "^3.5.0",
-    "blueimp-load-image": "^2.12.2",
-    "blueimp-tmpl": "^3.6.0"
+    "jquery": "3.2.1",
+    "bootstrap": "3.3.7",
+    "blueimp-file-upload": "9.19.1",
+    "blueimp-canvas-to-blob": "3.14.0",
+    "blueimp-load-image": "2.12.2",
+    "blueimp-tmpl": "3.11.0"
   },
   "license": "MIT"
 }
