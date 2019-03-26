@@ -1,6 +1,6 @@
 {
   "name": "ai-django-fileupload",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Initializes the uploader widget, and renders the attachments table. Must be used with ai-django-fileupload python package.",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,8 @@
   "author": "Ambient Innovation GmbH",
    "dependencies": {
     "jquery": "3.2.1",
-    "bootstrap": "3.3.7",
-    "blueimp-file-upload": "9.19.1",
+    "bootstrap": "3.4.1",
+    "blueimp-file-upload": "9.22.1",
     "blueimp-canvas-to-blob": "3.14.0",
     "blueimp-load-image": "2.12.2",
     "blueimp-tmpl": "3.11.0"
