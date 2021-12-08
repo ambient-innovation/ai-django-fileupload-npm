@@ -1,6 +1,6 @@
 {
   "name": "ai-django-fileupload",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Initializes the uploader widget, and renders the attachments table. Must be used with ai-django-fileupload python package.",
   "main": "index.js",
   "scripts": {
